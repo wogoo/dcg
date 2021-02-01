@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    margin: 24px;
+}
+.title404{
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -8%;
+    color: #333;
+    text-emphasis: left;
+    vertical-align: top;
+}
+.container{
+   
+    display: flex;
+    margin: auto;
+    margin-top: 120px;
+   
+}
+.content{
+    font-family: 'Space Mono', monospace;
+    justify-content: left;
+    margin-left: 30px;
+}
+
+.content-title{
+    margin-bottom: 20px;
+    font-size: 32px;
+    line-height: 95px 100%;
+}
+.content-text{
+    font-size: 18px;
+    width: 350px;
+}
+.content-button{
+    margin-top: 30px;
+}
+button{
+    padding: 20px;
+    background-color: #333;
+    color: aliceblue;
+    cursor: pointer;
+}
+button:hover{
+    font-size: 16px;
+    cursor: pointer;
+}
+img{
+    width: 450px;
+    float: left;
+    margin-left: 160px;
+}
+footer {
+    text-transform: uppercase;
+    font-size: 20px;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px){
+    img{
+        width: 280px;
+        margin: auto;
+    }
+    
+    .container{
+        margin: 0;        
+        display: block;        
+    }
+    .content-title{
+        font-size: 12px;
+        width: 180px;
+    }
+    .content-text{
+        font-size: 12px;
+        width: 150px;
+    }
+}
