@@ -99,7 +99,7 @@ body{
     color: #828282;
 }
 .container_author-content-image img{
-    border-radius: 50rem;
+    border-radius: 50%;
     height: 72px;
     width: 85px;
     display: inline-block;
@@ -110,7 +110,8 @@ body{
     font-size: 145%;
     line-height: 3.1rem;
     font-family: sans-serif;
-    padding: 1rem;
+    padding: 0 0 25px 15px;
+    
 }
 footer{
     font-size: 145%;
@@ -123,6 +124,10 @@ footer{
 }
 footer a{
     text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    color: #828282;
 }
 /* responsive */
 @media sceen and(min-width:1229px){
@@ -137,7 +142,7 @@ footer a{
 @media screen and(max-width:1099px){
     .container{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         font-family: 'Courier New', Courier, monospace;
         margin-left: 7rem;
     }
@@ -161,24 +166,52 @@ footer a{
     }
 }
 @media screen and (max-width:700px){
-    .container_card{
+    html,body{
+        min-height: 100%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    img{
+        display: none;
+    }
+    .container_author-content-name{
+        text-align: justify;
+    }
+    .container_content-image{
+        display: grid;
+        grid-auto-flow: column;
+    }
+    .description{
+        width: 250px;
+    }
+    .container_content-image{
+        margin-bottom: 140px;
+    }
+    .container_card{        
         width: 52%;
         height: 24%;
         position: absolute;
         top: 80%;
         left: 40%;
     }
+    footer{
+        position: static;
+        height: 0%;
+       
+    }
     @media screen and (max-width: 614px) {
 
-        .container__card {
-            width: 78%;
-            height: 34%;
-            position: absolute;
-            top: 80%;
-            left: 11%;
+        .container__card {          
+           position: absolute;
         }
         /* Hamburger */
-        .menu {
+        .card-image{
+            float: left;
+        }
+        .menu { 
             position: fixed;
             top: 75px;
             left: 0;
@@ -190,6 +223,7 @@ footer a{
             background: black;
             z-index: 999;
             border-top: 1px solid rgba(0, 0, 0, 0.2);
+            color: #eee;
         }
 
         .menu.active {
@@ -231,7 +265,7 @@ footer a{
             cursor: pointer;
 
         }
-
+    
         
 
 }
